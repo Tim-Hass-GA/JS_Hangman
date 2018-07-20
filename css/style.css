@@ -3,7 +3,7 @@ h2 {
 }
 
 .btn {
-  /* margin: 0 auto; */
+  margin: .15em;
 }
 
 .game {
@@ -12,6 +12,7 @@ h2 {
   grid-template-columns: repeat(6, 1fr);
   grid-gap: 2em;
   border: 1px solid pink;
+  /* background-color: #F0F; */
   padding: 1em;
 }
 
@@ -28,6 +29,7 @@ h2 {
   grid-template-rows: repeat(2, 1fr);
   padding: 1em;
   margin: 0 auto;
+  text-align: center;
 }
 
 .word-boxes {
@@ -39,7 +41,7 @@ h2 {
 #letter-buttons {
   border: 1px solid blue;
   grid-row: 1;
-  margin: 0 auto;
+  margin: 1em auto;
 }
 
 .letter-button {
@@ -63,8 +65,13 @@ h2 {
   grid-column: 1 / 4;
   padding: 1em;
 }
+
 .game-outcomes {
   border: 1px solid green;
   grid-column: 4 / 7;
+  padding: 1em;
+}
+
+.game-controls {
   padding: 1em;
 }
