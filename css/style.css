@@ -1,0 +1,70 @@
+h2 {
+  background-color: pink;
+}
+
+.btn {
+  /* margin: 0 auto; */
+}
+
+.game {
+  display: grid;
+  /* column */
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 2em;
+  border: 1px solid pink;
+  padding: 1em;
+}
+
+
+.left-side {
+  border: 1px solid black;
+  grid-column: 1 / 3;
+  padding: 1em;
+  margin: 0 auto;
+}
+.right-side {
+  border: 1px solid green;
+  grid-column: 3 / 7;
+  grid-template-rows: repeat(2, 1fr);
+  padding: 1em;
+  margin: 0 auto;
+}
+
+.word-boxes {
+  border: 1px solid black;
+  grid-row: 1;
+}
+
+
+#letter-buttons {
+  border: 1px solid blue;
+  grid-row: 1;
+  margin: 0 auto;
+}
+
+.letter-button {
+  font-size: 2.5em;
+  padding: .5em;
+}
+
+
+.game-details {
+  display: grid;
+  /* column */
+  grid-template-columns: repeat(6, 1fr);
+  grid-row: 2;
+  grid-gap: 2em;
+  border: 1px solid pink;
+  padding: 1em;
+}
+
+.guesses {
+  border: 1px solid black;
+  grid-column: 1 / 4;
+  padding: 1em;
+}
+.game-outcomes {
+  border: 1px solid green;
+  grid-column: 4 / 7;
+  padding: 1em;
+}

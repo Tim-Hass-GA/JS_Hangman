@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Tim Hass" />
+    <meta name="keywords" content="Web Development" />
+    <meta name="robots" content="none" />
+    <link rel="stylesheet" href="./css/style.css">
+    <title>HANGMAN</title>
+  </head>
+  <body>
+    <h2>Hangman</h2>
+    <div class="game">
+      <!-- <h2>Hangman</h2> -->
+
+      <div class="left-side">
+        <div id="the-gallows">
+          <h3>The Gallows</h3>
+            <img src="" alt="The Gallows" id="img-Hangman" name="img-Hangman">
+        </div>
+      </div>
+
+      <div class="right-side">
+        <div class="word-boxes"><p>test</p><!-- lazy div to display word to guess--></div>
+
+        <div id="letter-buttons"></div>
+
+        <div class="game-details">
+          <div class="guesses">
+            <label for="guess-display">Guess:</label>
+            <input type="text" name="guess-display" id="guess-display" readonly />
+            <br/>
+            <label for="guess-total">Running Total:</label>
+            <input type="text" name="guess-total" id="guess-total" readonly />
+          </div>
+
+          <div class="game-outcomes">
+            <label for="player-wins">Wins:</label>
+            <input type="text" name="player-wins" id="player-wins" readonly />
+            <br/>
+            <label for="player-losses">Losses:</label>
+            <input type="text" name="player-losses" id="player-losses" readonly />
+          </div>
+        </div>
+
+        <div class="game-controls">
+          <button class="btn" type="button" name="resetButton">Restart Game</button>
+          <button class="btn" type="button" name="newWordButton">New Word</button>
+        </div>
+      </div>
+
+    </div> <!--end of game -->
+    <script type="text/javascript" src="./js/main.js"></script>
+  </body>
+</html>
