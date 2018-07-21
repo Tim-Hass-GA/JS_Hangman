@@ -21,31 +21,31 @@
       </div>
 
       <div class="right-side">
-        <div class="word-boxes"><p>test</p><!-- lazy div to display word to guess--></div>
+        <div id="word-boxes"><p>loading...</p><!-- lazy div to display word to guess--></div>
 
         <div id="letter-buttons"></div>
 
         <div class="game-details">
           <div class="guesses">
             <label for="guess-display">Guess:</label>
-            <input type="text" name="guess-display" id="guess-display" readonly />
+            <input type="text" name="guess-display" id="guess-display" maxlength='26' readonly />
             <br/>
             <label for="guess-total">Running Total:</label>
-            <input type="text" name="guess-total" id="guess-total" readonly />
+            <input type="text" name="guess-total" id="guess-total" maxlength='5' readonly />
           </div>
 
           <div class="game-outcomes">
             <label for="player-wins">Wins:</label>
-            <input type="text" name="player-wins" id="player-wins" readonly />
+            <input type="text" name="player-wins" id="player-wins" maxlength='5' readonly />
             <br/>
             <label for="player-losses">Losses:</label>
-            <input type="text" name="player-losses" id="player-losses" readonly />
+            <input type="text" name="player-losses" id="player-losses" maxlength='5' readonly />
           </div>
         </div>
 
         <div class="game-controls">
-          <button class="btn" type="button" name="resetButton">Restart Game</button>
-          <button class="btn" type="button" name="newWordButton">New Word</button>
+          <input class="btn" type="button" name="resetButton" value="Restart Game" />
+          <input class="btn" type="button" name="newWordButton" value="New Word"/>
         </div>
       </div>
 
